@@ -142,6 +142,7 @@ export default class Carousel {
     if (this.config.height.search('%') === -1) {
       this.carouselContainer.style.height = this.config.height
     } else {
+      this.carouselContainer.style.height = '0'
       this.carouselContainer.style['padding-bottom'] = this.config.height
     }
 
