@@ -1,0 +1,62 @@
+.in-indicator-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  user-select: none;
+
+  li {
+    display: inline-block;
+    margin: 0 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgba(31, 45, 61, 0.11);
+    cursor: pointer;
+    transition: width 0.4s;
+  }
+
+  .in-indicator-active {
+    width: 26px;
+    background-color: rgba(31, 45, 61, 0.53);
+  }
+}
+
+.in-arrow {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.in-arrow-prev {
+  left: 2%;
+  background-image: url('../assets/left-arrow.svg');
+  transform: translate(-100%, -50%);
+}
+
+.in-arrow-next {
+  right: 2%;
+  background-image: url('../assets/right-arrow.svg');
+  transform: translate(100%, -50%);
+}
+
+.in-carousel-container:hover {
+  .in-arrow {
+    opacity: 0.6;
+  }
+
+  .in-arrow-prev {
+    transform: translate(0, -50%);
+  }
+
+  .in-arrow-next {
+    transform: translate(0, -50%);
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@inottn/carousel",
+  "version": "0.2.0",
+  "description": "A simple html5 carousel plugin",
+  "main": "dist/js/carousel.min.js",
+  "style": [
+    "dist/css/carousel.min.css",
+    "dist/css/theme.min.css"
+  ],
+  "scripts": {
+    "dev": "webpack --config webpack/dev.config.js --watch --colors",
+    "build": "webpack --config webpack/prod.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "carousel",
+    "slide",
+    "html5",
+    "plugin"
+  ],
+  "author": "inottn",
+  "license": "MIT",
+  "homepage": "https://inottn.github.io/carousel/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inottn/carousel"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "mini-css-extract-plugin": "^0.4.0",
+    "style-loader": "^0.20.3",
+    "sass-loader": "^7.0.1",
+    "node-sass": "^4.8.3",
+    "svg-inline-loader": "^0.8.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {}
+}
